@@ -1,0 +1,142 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F6F2FF;
+}
+
+/* ================= NAVBAR ================= */
+
+
+/* ================= MENU ================= */
+
+.nav-menu{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:0;
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+}
+
+/* ================= BOUTONS ================= */
+
+.nav-btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:#6A1B9A;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    border:2px solid transparent;
+}
+
+.nav-btn:hover{
+
+    background:#8E24AA;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+}
+
+.nav-btn:active{
+
+    transform:scale(.97);
+}
+
+/* Lien actif si tu utilises NavLink */
+
+.nav-btn.active{
+
+    background:white;
+
+    color:#4A148C;
+
+    border:2px solid #4A148C;
+}
+
+/* ================= CONTENU ================= */
+
+main{
+
+    padding:30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+    .nav-menu{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .nav-btn{
+
+        width:260px;
+
+        text-align:center;
+    }
+
+}
+
+.nav-item{
+    position:relative;
+}
+
+.nav-btn{
+    position:relative;
+}
+
+.cart-badge{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+
+    width:26px;
+    height:26px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#E91E63;
+    color:white;
+
+    font-size:13px;
+    font-weight:bold;
+
+    border:2px solid white;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.25);
+}

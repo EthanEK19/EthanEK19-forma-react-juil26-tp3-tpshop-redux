@@ -1,0 +1,211 @@
+.tour{
+    text-align:center;
+    color:#6A1B9A;
+    font-size:3rem;
+    margin:30px 0 10px;
+    font-weight:bold;
+}
+
+/* ================= PAGE ================= */
+
+h2{
+    text-align:center;
+    color:#4A148C;
+    margin:30px 0;
+    font-size:2rem;
+}
+
+/* ================= TABLEAU ================= */
+
+table{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(74,20,140,.15);
+}
+
+/* ================= EN-TÊTE ================= */
+
+thead{
+    background:#6A1B9A;
+    color:white;
+}
+
+thead th{
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+    letter-spacing:0.5px;
+
+    text-align: center;
+}
+
+/* ================= LIGNES ================= */
+
+tbody tr{
+    transition:0.25s;
+}
+
+tbody tr:nth-child(even){
+    background:#F8F3FF;
+}
+
+tbody tr:hover{
+    background:#EFE3FF;
+}
+
+/* ================= CELLULES ================= */
+
+td{
+    padding:16px 18px;
+    border-bottom:1px solid #E2D5F5;
+    color:#333;
+    vertical-align:middle;
+}
+
+tbody tr:last-child td{
+    border-bottom:none;
+}
+
+
+.product-cell{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-weight:bold;
+    color:#6A1B9A;
+}
+
+.product-image{
+    width:125px;
+    height:125px;
+    object-fit:fill;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+/* ================= Quantité ================= */
+td:nth-child(3){
+    font-weight:bold;
+    color:#6A1B9A;
+    text-align: center;
+}
+
+/* ================= PRIX ================= */
+
+.price-cell{
+    text-align:right;
+}
+
+.unit-price{
+    display:block;
+    color:#777;
+    font-size:0.9rem;
+}
+
+.total-price{
+    display:block;
+    margin-top:6px;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#6A1B9A;
+}
+
+/* ================= BOUTONS ================= */
+
+td button{
+    width:40px;
+    height:40px;
+    margin:0 4px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#6A1B9A;
+    color:white;
+
+    cursor:pointer;
+    font-size:18px;
+
+    transition:.25s;
+}
+
+td button:hover{
+    background:#8E24AA;
+    transform:translateY(-2px);
+    box-shadow:0 5px 12px rgba(74,20,140,.25);
+}
+
+td button:active{
+    transform:scale(.95);
+}
+
+/* ================= PANIER VIDE ================= */
+
+.empty-cart{
+    text-align:center;
+    padding:40px;
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#6A1B9A;
+    background:#F8F3FF;
+}
+
+.empty-cart::before{
+    content:"🛒";
+    display:block;
+    font-size:3rem;
+    margin-bottom:10px;
+    opacity:.8;
+}
+
+.cart-total-row{
+    background:#6A1B9A;
+    color:white;
+    font-weight:bold;
+}
+
+/* ================= TOTAL PANIER ================= */
+
+.total-label{
+    text-align:right;
+    padding:18px;
+    font-size:1.2rem;
+    letter-spacing:1px;
+    color:#FFFFFF;
+}
+
+.total-value{
+    text-align:right;
+    padding:18px;
+    font-size:1.5rem;
+    color:#FFD54F;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    table{
+        width:95%;
+        font-size:14px;
+    }
+
+    thead th,
+    td{
+        padding:12px;
+    }
+
+    td button{
+        width:34px;
+        height:34px;
+        font-size:16px;
+        margin:2px;
+    }
+}
